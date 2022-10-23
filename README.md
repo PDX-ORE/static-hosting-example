@@ -17,6 +17,18 @@ git clone https://github.com/JulioPDX/static-hosting-example.git
 cd static-hosting-example
 ```
 
+## View single markdown to HTML with Pandoc
+
+```shell
+# No css
+pandoc -s leaf1.md -o leaf1.html
+```
+
+```shell
+# With css
+pandoc -s leaf1.md -c pandoc.css -o leaf1-1.html
+```
+
 ## Install Python requirements
 
 ```shell
