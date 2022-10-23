@@ -1,0 +1,12 @@
+---
+- name: Validate fabric state
+  hosts: ATD_FABRIC
+  connection: local
+  gather_facts: false
+  collections:
+    - arista.avd
+  tasks:
+
+    - name: deploy configuration to device
+      import_role:
+        name: eos_validate_state

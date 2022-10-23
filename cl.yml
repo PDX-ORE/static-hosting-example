@@ -1,0 +1,31 @@
+name: bp
+prefix: ""
+
+mgmt:
+  network: statics
+  ipv4_subnet: 192.168.0.0/24
+
+topology:
+  kinds:
+    ceos:
+      image: ceos:4.28.2.1F
+    linux:
+      image: wbitt/network-multitool:alpine-extra
+
+  nodes:
+    leaf1:
+      kind: ceos
+      mgmt_ipv4: 192.168.0.12
+      group: 3
+    leaf2:
+      kind: ceos
+      mgmt_ipv4: 192.168.0.13
+      group: 3
+    spine1:
+      kind: ceos
+      mgmt_ipv4: 192.168.0.10
+      group: 4
+
+  links:
+    - endpoints: ["leaf1:eth1", "spine1:eth1"]
+    - endpoints: ["leaf2:eth1", "spine1:eth2"]

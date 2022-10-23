@@ -1,0 +1,5 @@
+---
+port_profiles:
+  TENANT_A:
+    mode: access
+    vlans: "110"

@@ -1,0 +1,92 @@
+# Example 1
+# Project information
+site_name: Fabric Docs
+
+# Configuration
+use_directory_urls: false
+site_url: ""
+edit_uri: ""
+docs_dir: avd-project
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+plugins: []
+nav:
+  - report: reports/ATD_FABRIC-state.md
+
+
+# Example 2
+# Project information
+# site_name: Fabric Docs
+
+# # Configuration
+# use_directory_urls: false
+# site_url: ""
+# edit_uri: ""
+# docs_dir: avd-project
+# theme:
+#   name: material
+#   palette:
+#     - media: "(prefers-color-scheme: light)"
+#       scheme: default
+#       toggle:
+#         icon: material/weather-sunny
+#         name: Switch to dark mode
+#     - media: "(prefers-color-scheme: dark)"
+#       scheme: slate
+#       toggle:
+#         icon: material/weather-night
+#         name: Switch to light mode
+# plugins: []
+# extra_css:
+#   - stylesheets/extra.css
+# extra_javascript:
+#   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+#   - stylesheets/tables.js
+# nav:
+#   - report: reports/ATD_FABRIC-state.md
+
+# Example 3
+# Project information
+site_name: Fabric Docs
+
+# Configuration
+use_directory_urls: false
+site_url: ""
+edit_uri: ""
+docs_dir: avd-project
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+plugins:
+  - include_dir_to_nav:
+  - search
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - stylesheets/tables.js
+nav:
+  - Home: README.md
+  - documentation
+  - reports
