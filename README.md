@@ -1,50 +1,47 @@
-# Examples
+# Static site example
 
-Somethings to show in video
+Simple workflows to view and build static site stuff.
 
-## List
+## Getting started
 
-- pandoc with no css
+The following tools must be installed to follow along.
 
-  ```shell
-  pandoc -s leaf1.md -o leaf1.html
-  ```
+- Pandoc
+- Docker Cli
+- Docker Compose
 
-- pandoc with custom css
+Clone this repo.
 
-  ```shell
-  pandoc -s leaf1.md -c pandoc.css -o leaf1-2.html
-  ```
+```shell
+git clone https://github.com/JulioPDX/static-hosting-example.git
+cd static-hosting-example
+```
 
-- Single page with mkdocs - example 1
+## Install Python requirements
 
-  ```shell
-  mkdocs serve
-  ```
+```shell
+python3 -m venv venv
+source venv/bin/activate
+pip install -r avd-project/req.txt
+```
 
-- Single page with styling - example 2
+## View MkDocs site
 
-  ```shell
-  mkdocs serve
-  ```
+```shell
+mkdocs serve
+```
 
-- full site with styling and additional plugin - example 3
+## Build MkDocs site
 
-  ```shell
-  mkdocs serve
-  ```
+```shell
+mkdocs build
+```
 
-- build site for offline viewing
+## Run site on container
 
-  ```shell
-  mkdocs build
-  ```
-
-- host created site with containers
-
-  ```shell
-  docker-compose up --build
-  ```
+```shell
+docker-compose up --build
+```
 
 ## References
 
@@ -56,4 +53,4 @@ Somethings to show in video
 - [Docker and Docker Compose install](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-install-Docker-and-docker-compose-on-Ubuntu)
 - [Very light container to display static site](https://lipanski.com/posts/smallest-docker-image-static-website)
 - [GitHub for container image](https://github.com/lipanski/docker-static-website)
-- [AVD and Docs running on Docker or Kubernetes by Thomas G](https://github.com/titom73/demo-avd-compose-k8s)
+- [AVD and Docs running on Docker or Kubernetes by Thomas Grimonet](https://github.com/titom73/demo-avd-compose-k8s)

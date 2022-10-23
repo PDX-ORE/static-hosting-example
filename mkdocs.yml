@@ -1,28 +1,28 @@
 # Example 1
 # Project information
-site_name: Fabric Docs
+# site_name: Fabric Docs
 
-# Configuration
-use_directory_urls: false
-site_url: ""
-edit_uri: ""
-docs_dir: avd-project
-theme:
-  name: material
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
-plugins: []
-nav:
-  - report: reports/ATD_FABRIC-state.md
+# # Configuration
+# use_directory_urls: false
+# site_url: ""
+# edit_uri: ""
+# docs_dir: avd-project
+# theme:
+#   name: material
+#   palette:
+#     - media: "(prefers-color-scheme: light)"
+#       scheme: default
+#       toggle:
+#         icon: material/weather-sunny
+#         name: Switch to dark mode
+#     - media: "(prefers-color-scheme: dark)"
+#       scheme: slate
+#       toggle:
+#         icon: material/weather-night
+#         name: Switch to light mode
+# plugins: []
+# nav:
+#   - report: reports/ATD_FABRIC-state.md
 
 
 # Example 2
